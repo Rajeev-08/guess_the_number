@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 4rem;
+  color: #00ffe7;
+  text-shadow: 0 0 15px #00ffe7;
+  margin-bottom: 1rem;
+}
+
+.between {
+  font-size: 1.4rem;
+  color: #ccc;
+}
+
+.number {
+  background: #00ffe7;
+  color: #111;
+  font-size: 6rem;
+  width: 15rem;
+  padding: 3rem 0;
+  margin: 2rem auto;
+  text-align: center;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 25px #00ffe7;
+  transition: all 0.3s ease;
+}
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.left, .right {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2rem;
+  padding: 3rem;
+  width: 30rem;
+  box-shadow: 0 4px 30px rgba(0, 255, 231, 0.3);
+}
+
+.guess {
+  background: transparent;
+  border: 2px solid #00ffe7;
+  font-size: 3rem;
+  color: #00ffe7;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.guess::placeholder {
+  color: #999;
+}
+
+.btn {
+  background: #00ffe7;
+  color: #111;
+  border: none;
+  padding: 1.5rem 3rem;
+  font-size: 1.8rem;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #00cfc4;
+}
+
+.again {
+  background-color: transparent;
+  border: 2px solid #00ffe7;
+  color: #00ffe7;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.again:hover {
+  background-color: #00ffe7;
+  color: #111;
+}
+.message {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  height: 3rem;
+  transition: color 0.3s ease;
+}
+
+.label-score,
+.label-highscore {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
